@@ -13,6 +13,8 @@ img{
     max-width: 100%;
     display: block;
 }
+
+/* header */
 .h-bg{
     background: #222222;
 }
@@ -23,10 +25,10 @@ img{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 15px 0;
 }
-.h-menu{
-
+.h-logo{
+  margin: 10px;
 }
 .h-menu ul{
     display: flex;
@@ -34,9 +36,83 @@ img{
 .h-menu ul li a{
     color: #fff;
     display: block;
-    padding: 10px;
+    padding: 5px;
     /* background: tomato; */
     margin: 5px;
     font-size: 1.25em;
-    font-weight: bold;
+}
+
+/* main */
+.m-principal{
+    background: url(./img/bg-intro.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+}
+.m-principal h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.m-principal h1::after{
+     content: '';
+     align-self: center;
+     height: 5px;
+     width: 20px;
+     background: #fff;
+     margin: 10px;
+}
+.m-principal h3{
+    font-weight: normal;
+    font-size: 1.5em;
+    font-style: italic;
+}
+.t-intro{
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 2.25rem;
+    color: #222222;
+}
+.s1-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* background: tomato; */
+    justify-content: center;
+}
+.s1-img{
+    margin: 20px 10px;
+    flex: 1 1 260px;
+}
+.s1-img img{
+ width: 100%;
+ border-radius: 10px;
+}
+.s1-p {
+  flex: 1 1 1200px;
+  display: flex;
+  justify-content: center;
+}
+.s1-p p{
+    max-width: 400px;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #222222;
+}
+.s1-img p{
+    position: relative;
+    width: 10rem;
+    height: 3rem;
+    top: -10%;
+    left: 5%;
+    background: #222222;
+    color: #fff;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
